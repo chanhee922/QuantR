@@ -1,4 +1,18 @@
 
-# R로하는 퀀텀투자 연습
+# **R로하는 퀀트투자 연습**  
 
-url = https://hyunyulhenry.github.io/quant_cookbook/%ED%80%80%ED%8A%B8-%ED%88%AC%EC%9E%90%EC%9D%98-%EC%8B%AC%EC%9E%A5-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.html
+
+<center><img src="https://miro.medium.com/max/1400/1*3UNtfZrmEiv3XFKs_xaRcA.jpeg"></center>
+
+## **1. 퀀트투자란?**  
+- 모형을 기반으로 금융상품의 가격을 산정하거나, 이를 바탕으로 투자하는 것
+- 수학과 통계를 기반으로 전략을 만들고 이를 바탕으로 투자하는 정량적인 투자법
+
+## **2. R을 접목하는 이유?**  
+- 데이터를 수집·가공한 후 이를 바탕으로 모델을 만들고 실행하는 단계는 데이터 과학의 업무 흐름도와 매우 유사
+- 투자에 필요한 주가, 재무제표 등의 데이터를 수집해 정리한 후 필요한 지표를 얻기 위해 가공
+- 각종 모형을 이용해 투자 종목을 선택하거나 백테스트를 수행하며, 이를 바탕으로 실제로 투자하고 성과를 평가
+
+*참고자료*
+~~https://hyunyulhenry.github.io/quant_cookbook/%ED%80%80%ED%8A%B8-%ED%88%AC%EC%9E%90%EC%9D%98-%EC%8B%AC%EC%9E%A5-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.html~~
+

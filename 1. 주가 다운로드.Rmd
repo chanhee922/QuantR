@@ -1,0 +1,47 @@
+---
+title: '1. 주가 다운로드'
+author: 'Tschan Yoo'
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1.1 API를 이용한 데이터 다운로드
+
+```{r, message = FALSE}
+# 핵심패키지
+library(quantmod)
+# 종목의 티커를 함수에 입력
+getSymbols('AAPL')
+# AAPL이라는 변수에 정보가 저장됨
+head(AAPL)
+```
+
+### - `auto.assign` 인자를 FALSE로 설정해주면 다운로드한 데이터가 원하는 변수에 저장
+
+```{r, message = FALSE}
+Apfel = getSymbols('AAPL',
+                  from = '2020-01-01', to = '2020-07-17',
+                  auto.assign = FALSE)
+head(Apfel)
+```                  
+
+### - 한번에 여러 종목의 주가 다운로드
+```{r, message = FALSE}
+ticker = c('FB', 'NVDA') 
+getSymbols(ticker)
+```
+
+#### - `코스피` 상장 종목의 경우 `티커.KS`, `코스닥` 상장 종목의 경우 `티커.KQ`의 형태로 입력
+
+``````{r, message = FALSE}
+meritz = getSymbols('008560.KS',
+           from = '2020-01-01', to = '2020-07-17',
+           auto.assign = F)
+head(meritz)  
+chart_Series(Cl(meritz)) # Cl = 종가
+```
+
